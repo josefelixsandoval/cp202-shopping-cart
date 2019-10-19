@@ -372,7 +372,7 @@ function renderCart() {
 
       <div id="shopping-cart" style="width:20rem; display:none">
         <div class="card shadow-right" style="width: 18rem;">
-          <img src="img/donut-header-800px.jpg" class="card-img-top" alt="Header">
+          <img src="donut-header-800px.jpg" class="card-img-top" alt="Header">
 
           <div id="cart-items">
           </div>
