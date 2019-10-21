@@ -11,7 +11,10 @@ This shopping cart uses window.localStorate to store items. It is self contained
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 <script src="cart.js" async></script>
+<script>localStorage.checkoutURL = 'checkout.html';</script>
 ```
+
+The cart needs to know where the checkout.html page is. The URL is specified in `localStorage.checkoutURL`. This path is relative to where the page including the code is.
 
 ## Checkout
 The checkout page is intented to be used after it has been branded. To add the checkout portion of the cart (reads the localStorage to render all the items in the cart), use the following code:
