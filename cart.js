@@ -148,7 +148,7 @@ function addItemToDOM(data) {
         </div>
         <div class="col-4">
           <p class="text-right proza-libre-content" id="item-price">$ ${data.prodPrice}</p>
-          <p class="text-right proza-libre-content">( <span id="item-quantity-${cleanProdName}">${data.prodQty}</span> )&nbsp;&nbsp;<a href="#" id="cart-button-${cleanProdName}"><i class="fa fa-trash-o" aria-hidden="true"></i></a></p>
+          <p class="text-right proza-libre-content">( <span id="item-quantity-${cleanProdName}">${data.prodQty}</span> )&nbsp;&nbsp;<a href="#" class="delete-icon" id="cart-button-${cleanProdName}"><i class="fa fa-trash-o" aria-hidden="true"></i></a></p>
         </div>
       </div>
     </div>

@@ -153,11 +153,11 @@ function addItemToDOM(data) {
       <div class="row">
         <div class="col-8">
           <p class="proza-libre-content-header" id="item-name">${data.prodName}</p>
-          <p class="proza-libre-content" id="itme-description">${data.prodDesc}</p>
+          <p class="proza-libre-content" id="item-description">${data.prodDesc}</p>
         </div>
         <div class="col-4">
           <p class="text-right proza-libre-content" id="item-price">$ ${data.prodPrice}</p>
-          <p class="text-right proza-libre-content">( <span id="item-quantity-${cleanProdName}">${data.prodQty}</span> )</p>
+          <p class="text-right proza-libre-content"><span id="item-quantity">( ${data.prodQty} )</span></p>
         </div>
       </div>
     </div>
@@ -194,9 +194,9 @@ function renderCart() {
     <div id="cart-total">
       <hr>
       <div class="card-body">
-        <p class="text-right proza-libre-content proza-libre-content-footer">Sub Total&nbsp;&nbsp;&nbsp;$<span id="cart-total-subtotal"></span></p>
-        <p class="text-right proza-libre-content proza-libre-content-footer">HST&nbsp;&nbsp;&nbsp;$<span id="cart-total-hst"></span></p>
-        <p class="text-right proza-libre-content proza-libre-content-header">Total&nbsp;&nbsp;&nbsp;$<span id="cart-total-amount"></span></p>
+        <p class="text-right proza-libre-content proza-libre-content-footer"><span class="white-text">Sub Total</span>&nbsp;&nbsp;&nbsp;<span class="white-text">$</span><span id="cart-total-subtotal"></span></p>
+        <p class="text-right proza-libre-content proza-libre-content-footer"><span class="white-text">HST</span>&nbsp;&nbsp;&nbsp;<span class="white-text">$</span><span id="cart-total-hst"></span></p>
+        <p class="text-right proza-libre-content proza-libre-content-header"><span class="white-text">Total</span>&nbsp;&nbsp;&nbsp;<span class="white-text">$</span><span id="cart-total-amount"></span></p>
       </div>
     </div>
   `;
